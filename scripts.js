@@ -2,10 +2,9 @@
 
 window.onload = function() {
   
-  document.querySelector("#ingredientsh1").classList.add("tp");
+  document.querySelector("#ingredients h4").classList.add("tp");
   
   document.querySelector("#centered h1").onclick = function() {
-    
     this.classList.toggle("black");
   }
   
@@ -14,16 +13,23 @@ window.onload = function() {
     this.classList.toggle("tpShow");
     
   }
-   document.querySelector ("#row #equipment").onclick =function() {
+  
+  document.querySelector ("#row #equipment").onclick =function() {
    
     this.classList.toggle("tpShow");
     
   }
-    document.querySelector ("#row #directions").onclick =function() {
+  
+  document.querySelector ("#row #directions").onclick =function() {
    
     this.classList.toggle("tpShow");
     
   }
+    
+    
+   document.querySelector("#row #ingredients ul").innerHTML += "<li> A hunger for chocolate </li>";
+
+
   
 }
 

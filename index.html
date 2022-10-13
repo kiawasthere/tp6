@@ -18,10 +18,11 @@
 
   <style>
     @media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-  }
-}
+      .column {
+        width: 100%;
+      }
+    }
+
     * {
       box-sizing: border-box;
     }
@@ -32,7 +33,7 @@
       float: left;
       width: 33.33%;
       padding: 10px;
-      height: 1300px;
+      height: auto;
     }
 
     .row:after {
@@ -57,7 +58,7 @@
 
   <div class="container">
     <img src="https://images.unsplash.com/photo-1485962307416-993e145b0d0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">"
-    <div class="centered">
+    <div id="centered">
       <h1>Basic Crepes</h1>
     </div>
   </div>
@@ -70,9 +71,11 @@
     <div class="equipment"></div>
     <div class="directions"></div>
   </div>
-  <div id="ingredients">
-    <div class="row">
-      <div class="column" style="background-color:#aaa;">
+
+
+  <div id="row">
+
+    <div id="ingredients" class="column" style="background-color:#aaa;">
         <h4>Ingredients</h4>
         <ul>
           <li>½ cup of milk </li>
@@ -82,40 +85,40 @@
           <li> 2 tablespons of melted better</li>
           <li> 2 Eggs</li>
         </ul>
-      </div>
+    </div>
 
-      <div id="equipment">
-        <div class="row">
-          <div class="column" style="background-color:#aaa;">
-            <h4>Kitchen Equipment</h4>
-            <ul>
-              <li>Oven</li>
-              <li>Spatula </li>
-              <li> Cooking Pan</li>
-              <li>Bowl</li>
-              <li>Spoon</li>
-            </ul>
-          </div>
+    <div id="equipment" class="column" style="background-color:#aaa;">
+        <h4>Kitchen Equipment</h4>
+        <ul>
+          <li>Oven</li>
+          <li>Spatula </li>
+          <li> Cooking Pan</li>
+          <li>Bowl</li>
+          <li>Spoon</li>
+        </ul>
+    </div>
 
-          <div id="directions">
-            <div class="row">
-              <div class="column" style="background-color:#aaa;">
-                <h4>Directions</h4>
-                <ol>
-                  <li>In a large mixing bowl, whisk together the flour and the eggs. Gradually add in the milk and water, stirring to combine. Add the salt and butter; <mark> beat until smooth.  </mark> </li>
-                  <li>Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each crepe. Tilt the pan with a circular motion so that the batter coats the surface evenly.</li>
-                  <li>Cook the crepe for about 2 minutes, until the bottom is light brown. Loosen with a spatula, turn and cook the other side. <mark> Serve hot.</mark></li>
 
-                </ol>
-              </div>
+    <div id="directions" class="column" style="background-color:#aaa;">
+        <h4>Directions</h4>
+        <ol>
+          <li>In a large mixing bowl, whisk together the flour and the eggs. Gradually add in the milk and water, stirring to combine. Add the salt and butter; <mark> beat until smooth.  </mark> </li>
+          <li>Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each crepe. Tilt the pan with a circular motion so that the batter coats the surface evenly.</li>
+          <li>Cook the crepe for about 2 minutes, until the bottom is light brown. Loosen with a spatula, turn and cook the other side. <mark> Serve hot.</mark></li>
 
-              <p class="copyright">(Original recipe at <a href="https://www.allrecipes.com/recipe/16383/basic-crepes/">AllRecipes.com</a>.)</p>
+        </ol>
+    </div>
 
-              <div id="foodHeader">
+  </div>
+  <!-- closing row tag -->
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SpSrBGnjurA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p class="copyright">(Original recipe at <a href="https://www.allrecipes.com/recipe/16383/basic-crepes/">AllRecipes.com</a>.)</p>
 
-              </div>
+  <div id="foodHeader">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SpSrBGnjurA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </div>
 
 
 
